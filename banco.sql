@@ -1,7 +1,6 @@
 CREATE DATABASE IF NOT EXISTS aulas_particulares;
 use aulas_particulares;
 
--- Tabelas
 CREATE TABLE IF NOT EXISTS aluno (
     id_aluno INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -36,7 +35,6 @@ CREATE TABLE IF NOT EXISTS agenda (
     FOREIGN KEY (id_disciplina) REFERENCES disciplina(id_disciplina)
 );
 
--- Dados
 INSERT INTO professor (nome, email, telefone, especialidade)
 VALUES ('Enzo Martins', 'enzo.martins@exemplo.com', '(11) 91234-5678', 'Banco de Dados');
 
